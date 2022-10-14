@@ -36,8 +36,8 @@ if uploaded_file is not None:
         wrkbk = openpyxl.load_workbook(uploaded_file)
         sh = wrkbk.active
 
-        web = webdriver.Chrome(ChromeDriverManager(options=options)
-        web.get("https://fsm.sg.formulasquare.com/fsm_api/wawaji_cms/")
+        web = webdriver.Chrome(options=options)
+        web.get(url)
         time.sleep(3)
 
         #Login
