@@ -1,6 +1,6 @@
-#======USER TO FILL===========
+#======SUBJECT TO CHANGE===========
 url = "https://fsm.sg.formulasquare.com/fsm_api/wawaji_cms/"
-#=============================
+#==================================
 
 import time
 import openpyxl
@@ -37,7 +37,7 @@ if uploaded_file is not None:
         sh = wrkbk.active
 
         web = webdriver.Chrome(ChromeDriverManager(options=options)
-        web.get(url)
+        web.get("https://fsm.sg.formulasquare.com/fsm_api/wawaji_cms/")
         time.sleep(3)
 
         #Login
