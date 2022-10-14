@@ -33,7 +33,7 @@ if uploaded_file is not None:
         st.info("Running. Please do NOT click on the button again.")
 
         #open workbook
-        wrkbk = openpyxl.load_workbook(uploaded_file)
+        wrkbk = openpyxl.load_workbook(uploaded_file, data_only=True)
         sh = wrkbk.active
 
         web = webdriver.Chrome(options=options)
