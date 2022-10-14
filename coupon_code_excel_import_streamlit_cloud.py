@@ -13,7 +13,7 @@ options = Options()
 options.headless = True
 
 st.title("5G Claw Machine CMS - input coupon code from excel file")
-st.write("Please use the form below to enter the codes into the CMS system. Note: the form below accepts coupon codes that are whole numbers only.")
+st.write("Please use the form below to enter the codes into the CMS system.")
 st.write("If at any point you encounter an error message, this could be due to the following: 1) username and/or password is incorrrect; or 2) coupon code already exists in the CMS system.")
 
 uploaded_file = st.file_uploader("Upload file", type=['xlsx'])
